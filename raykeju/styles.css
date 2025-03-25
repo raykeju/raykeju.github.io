@@ -1,0 +1,216 @@
+body {
+    background-color: #351431;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.tab-container {
+    max-width: 700px;
+    width: 20;
+    margin: 50px auto;
+    background-color: #563342;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #f9f9f9; 
+    transition: height 0.3s ease-in-out;
+}
+
+.tabs {
+    display: flex;
+    background-color: #351431;
+    padding-top: 10px; /* Add space above the tabs */
+    margin-top: -10px; /* Pull the container down slightly */
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Place the container behind the selected tab */  
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+    position: relative; /* Required for z-index */
+    z-index: 1; /* Default z-index for tabs */
+}
+
+.tab.active {
+    background-color: #563342;
+    color: #f9f9f9;
+}
+
+/*.tab:hover {
+    background-color: #e8f0fe;
+}*/
+
+.content {
+    padding: 20px;
+    
+}
+
+.tab-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    border-radius: 10px;
+
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.artworks {
+    column-count: 1; /* Two columns */
+    
+    max-width: 1200px; /* Adjust as needed */
+    margin:auto;
+}
+
+.pixel {
+    column-count: 1; /* Two columns */
+    column-gap: 10px; /* Adjust the space between columns */
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+}
+
+.artworks22 {
+    column-count: 2; /* Two columns */
+    
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+}
+
+.artworks img {
+    width: 100%; /* Makes images take full width of the column */
+    margin-bottom: 10px; /* Adds spacing between images */
+    border-radius: 10px; /* Optional, for rounded corners */
+    display: block; /* Ensures images respect column structure */
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInAnim 0.5s ease-out forwards;
+}
+
+@keyframes fadeInAnim {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.info-cont{
+    width: 20;
+    max-width: 700px;
+    align-items: flex-start;
+    margin: 50px auto;
+}
+.info-box {
+    background: #563342;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.box {
+    gap: 20px;
+    background: rgb(122, 122, 122);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.twit {
+    background-image: url(pic/twittor.webp);
+}
+.insta {
+    background-image: url(pic/insta.webp);
+}
+.yt {
+    background-image: url(pic/yt.webp);
+}
+.itch {
+    background-image: url(pic/itch.webp);
+}
+.bsky {
+    background-image: url(pic/bsky.webp);
+}
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px  1px;
+    background: #f9f9f9;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    width: 100%;
+    text-align: center;
+}
+.button:hover {
+    transform: scale(1.01);
+}
+.image{
+    max-width: 50%; /* Ensures it never exceeds the container */
+    width: 100vw;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.box h1{
+    line-height: 0.5; /* Adjust as needed */
+}
+.box p {
+    line-height: 1; /* Adjust as needed */
+}
+
+p {
+    color: #f9f9f9;
+}
+h2 {
+    color: #f9f9f9;
+}
+h3 {
+    color: #f9f9f9;
+}
+ul {
+    color: #f9f9f9;
+}
+
+.itchG {
+    gap: 20px;
+}
+iframe {
+    border-radius: 10px; /* Rounded corners */
+    width: 100%;
+    opacity: 255;
+    
+}
